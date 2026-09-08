@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Studio — Flower Bouquet Shop</title>
+    <meta name="description" content="Reach our floral atelier for bespoke commissions, courier delivery inquiries, wedding florals, or boutique visits." />
+    <meta property="og:title" content="Contact Studio — Flower Bouquet Shop" />
+    <meta property="og:description" content="Reach our floral atelier for bespoke commissions and flower delivery inquiries." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+
+    <!-- Central Design System Stylesheet -->
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <!-- Ambient Organic Blobs for Glassmorphism Depth -->
+    <div class="ambient-blobs-layer" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Sticky Glass Navigation Header -->
+    <header class="site-header" id="site-header">
+      <div class="header-container">
+        <a href="/index.html" class="logo-link" id="nav-logo">
+          <svg class="logo-flower-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2a4 4 0 0 1 4 4c0 1.5-.8 2.8-2 3.5 1.2.7 2 2 2 3.5a4 4 0 0 1-4 4 4 4 0 0 1-4-4c0-1.5.8-2.8 2-3.5-1.2-.7-2-2-2-3.5a4 4 0 0 1 4-4z"/>
+            <path d="M12 17v5"/>
+            <path d="M9 20c1.5-1 3-1 3-1"/>
+          </svg>
+          <div>
+            <span class="logo-text">Pétale &amp; Tige</span>
+            <span class="logo-sub">Artisan Florist Atelier</span>
+          </div>
+        </a>
+
+        <nav class="nav-desktop" aria-label="Main Navigation">
+          <a href="/index.html" class="nav-link">Home</a>
+          <a href="/shop.html" class="nav-link">Shop</a>
+          <a href="/shop.html?occasion=anniversaries" class="nav-link">Occasions</a>
+          <a href="/about.html" class="nav-link">About</a>
+          <a href="/contact.html" class="nav-link active">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="neumorph-icon-btn cart-icon-btn open-cart-trigger" id="header-cart-btn" aria-label="Open Cart Bag">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-badge-count" style="display:none;">0</span>
+          </button>
+
+          <button class="neumorph-icon-btn mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Mobile Menu" aria-expanded="false">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer & Backdrop -->
+    <div id="mobile-nav-backdrop" class="mobile-nav-backdrop" aria-hidden="true"></div>
+    <div id="mobile-nav-drawer" class="mobile-nav-drawer">
+      <a href="/index.html" class="mobile-nav-link">Home</a>
+      <a href="/shop.html" class="mobile-nav-link">Shop Bouquets</a>
+      <a href="/shop.html?occasion=birthdays" class="mobile-nav-link">Birthday Flowers</a>
+      <a href="/shop.html?occasion=anniversaries" class="mobile-nav-link">Anniversary Romance</a>
+      <a href="/about.html" class="mobile-nav-link">About Atelier</a>
+      <a href="/contact.html" class="mobile-nav-link active">Contact &amp; Visit</a>
+    </div>
+
+    <main class="main-wrapper">
+      <section class="section-padding">
+        <div class="container-boxed">
+          <div class="section-header text-center fade-up-enter delay-1">
+            <span class="eyebrow">Connect With Our Studio</span>
+            <h1 class="font-serif">We Would Love to Hear From You</h1>
+            <p class="text-muted text-base max-w-lg mx-auto mt-2">
+              Whether you need floral advice for a special occasion, custom wedding arrangements, or courier dispatch assistance.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Left: Neumorphic Contact Form -->
+            <div class="contact-card">
+              <h2 class="font-serif text-2xl mb-2">Send a Message to Our Florists</h2>
+              <p class="text-muted text-sm mb-6">We answer every note personally within 3 business hours.</p>
+
+              <form id="contact-form">
+                <div class="contact-form-group">
+                  <label for="contact-name" class="contact-label">Your Name</label>
+                  <div class="neumorph-input-wrap">
+                    <input type="text" id="contact-name" class="neumorph-input" placeholder="e.g. Charlotte Dubois" required />
+                  </div>
+                </div>
+
+                <div class="contact-form-group">
+                  <label for="contact-email" class="contact-label">Email Address</label>
+                  <div class="neumorph-input-wrap">
+                    <input type="email" id="contact-email" class="neumorph-input" placeholder="charlotte@example.com" required />
+                  </div>
+                </div>
+
+                <div class="contact-form-group">
+                  <label for="contact-subject" class="contact-label">Occasion or Subject</label>
+                  <div class="neumorph-input-wrap">
+                    <input type="text" id="contact-subject" class="neumorph-input" placeholder="e.g. Wedding Florals, Custom Anniversary Bouquet" />
+                  </div>
+                </div>
+
+                <div class="contact-form-group">
+                  <label for="contact-message" class="contact-label">How can our florists assist you?</label>
+                  <div class="neumorph-input-wrap">
+                    <textarea id="contact-message" rows="4" class="neumorph-textarea" placeholder="Tell us about desired flowers, color preferences, or recipient dates..." required></textarea>
+                  </div>
+                </div>
+
+                <button type="submit" class="neumorph-btn-primary w-full mt-2" id="contact-submit-btn">
+                  Send Floral Inquiry
+                </button>
+
+                <div id="contact-status-msg"></div>
+              </form>
+            </div>
+
+            <!-- Right: Studio Details, Direct WhatsApp & Stylized Map -->
+            <div>
+              <!-- Stylized Minimalist Map Placeholder -->
+              <div class="stylized-map-container mb-6">
+                <!-- Abstract topographic decorative lines -->
+                <svg class="map-svg-bg" viewBox="0 0 400 260" fill="none" stroke="#D97B92" stroke-width="1.2">
+                  <circle cx="200" cy="130" r="40" stroke-dasharray="3 3"/>
+                  <circle cx="200" cy="130" r="80" stroke-dasharray="4 4"/>
+                  <circle cx="200" cy="130" r="120" stroke-dasharray="6 6"/>
+                  <path d="M30 40 Q 150 90 200 130 T 360 210" stroke-linecap="round"/>
+                  <path d="M50 200 Q 140 160 200 130 T 330 60" stroke-linecap="round"/>
+                  <rect x="185" y="115" width="30" height="30" rx="6" fill="#F6D9DE" opacity="0.6"/>
+                </svg>
+                <div class="map-pin-pill">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-primary">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Pétale &amp; Tige Atelier &bull; 6e Arr.</span>
+                </div>
+              </div>
+
+              <!-- Quick Communication Action Buttons -->
+              <div class="flex gap-4 flex-wrap mb-6">
+                <a href="https://wa.me/33142680024" target="_blank" rel="noopener noreferrer" class="neumorph-btn flex-1" id="whatsapp-cta-btn">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-sage">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                  </svg>
+                  <span>WhatsApp Concierge</span>
+                </a>
+                <a href="tel:+33142680024" class="neumorph-btn flex-1" id="phone-cta-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  <span>Call +33 1 42 68 00 24</span>
+                </a>
+              </div>
+
+              <!-- Visiting Information Cards -->
+              <div class="glass-panel p-6">
+                <h3 class="font-serif text-lg mb-4 text-deep">Studio Details &amp; Hours</h3>
+                <div class="contact-info-list">
+                  <div class="contact-info-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="text-primary flex-shrink-0">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span class="text-sm">14 Rue de Fleurus, 75006 Paris, France</span>
+                  </div>
+
+                  <div class="contact-info-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="text-primary flex-shrink-0">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <div class="text-sm">
+                      <div>Tuesday &ndash; Saturday: 8:30 AM &ndash; 7:00 PM</div>
+                      <div class="text-muted text-xs">Sunday: 9:00 AM &ndash; 2:00 PM (Monday: Studio conditioning, deliveries only)</div>
+                    </div>
+                  </div>
+
+                  <div class="contact-info-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="text-primary flex-shrink-0">
+                      <rect x="1" y="3" width="15" height="13"></rect>
+                      <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                      <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                      <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                    </svg>
+                    <span class="text-sm">Same-day courier across Paris, Neuilly, Boulogne, and Greater London.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Accordion Section -->
+          <div class="mt-20 max-w-3xl mx-auto" id="faq">
+            <div class="section-header text-center">
+              <span class="eyebrow">Help &amp; Questions</span>
+              <h2 class="font-serif">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="accordion-item open">
+              <button class="accordion-header" type="button">
+                <span>Can I request a specific delivery time slot?</span>
+                <svg class="accordion-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="accordion-body">
+                Yes! Our courier orders include live tracking. When ordering, you can designate morning (9:00 AM &ndash; 1:00 PM) or afternoon (2:00 PM &ndash; 6:00 PM) arrival windows.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" type="button">
+                <span>How will my bouquet stay fresh in transit?</span>
+                <svg class="accordion-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="accordion-body">
+                All stems travel with an organic hydration pouch filled with fresh spring water and flower nutrients, wrapped in thermal insulating kraft that protects delicate petals from temperature fluctuations.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header" type="button">
+                <span>Can I include a personalized handwritten message?</span>
+                <svg class="accordion-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="accordion-body">
+                Every bouquet comes with our signature handmade textured cotton note card, penned with dip-pen ink by our florists free of charge. Simply enter your message in the order notes!
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container-boxed">
+        <div class="footer-grid">
+          <div>
+            <span class="logo-text">Pétale &amp; Tige</span>
+            <p class="footer-brand-desc">
+              An independent floral atelier dedicated to tactile serenity, slow living, and romantic natural arrangements.
+            </p>
+          </div>
+          <div>
+            <h4 class="footer-title">Boutique</h4>
+            <ul class="footer-links">
+              <li><a href="/shop.html">All Bouquets</a></li>
+              <li><a href="/shop.html?occasion=birthdays">Birthdays</a></li>
+              <li><a href="/shop.html?occasion=anniversaries">Anniversaries</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-title">Atelier</h4>
+            <ul class="footer-links">
+              <li><a href="/about.html">Our Story</a></li>
+              <li><a href="/contact.html">Studio Visits</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer-title">Connect</h4>
+            <p class="text-sm text-muted">WhatsApp Concierge available daily from 8:30 AM &ndash; 8:00 PM CET.</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Pétale &amp; Tige Atelier. All rights reserved.</span>
+          <span>Crafted with warm pink glassmorphism &amp; soft neumorphism.</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Main Application Module Script -->
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

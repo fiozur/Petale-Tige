@@ -1,0 +1,6 @@
+{
+  "name": "Flower Bouquet Shop",
+  "description": "A premium, minimalist flower boutique blending warm pink glassmorphism, soft neumorphic depth, and handcrafted floral collections.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
